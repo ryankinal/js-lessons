@@ -2,7 +2,11 @@
 
 <input type="text" ng-model="keyword">
 
-<div ng-repeat="l in lessons|filter:keyword">
-	<h2>{{l.title}}</h2>
-	<p><a ui-sref="lesson({id: l.link})">Read</a></p>
+<div class="lesson-list">
+	<div ng-repeat="l in lessons|filter:keyword" class="lesson bg-info">
+		<h2><a ui-sref="lesson({id: l.link})">{{l.title}} <span class="glyphicon glyphicon-play"></span></a></h2>
+		<ul class="tag-list">
+			<li class="tag bg-primary" ng-repeat="k in l.keywords"><span class="glyphicon glyphicon-tag"></span> {{k}}</li>
+		</ul>
+	</div>
 </div>

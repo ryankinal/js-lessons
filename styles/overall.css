@@ -1,0 +1,23 @@
+h1, h2, h3, h4 {
+	margin: 0 0 10px 0;
+}
+
+.lesson-list .lesson {
+	padding: 15px;
+	box-shadow: 5px 0 5px #EEE;
+	margin: 15px 0;
+	overflow: hidden;
+}
+
+.tag-list {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.tag-list .tag {
+	float: left;
+	background-color: #00F;
+	padding: 5px 8px;
+	margin-right: 10px;
+}
