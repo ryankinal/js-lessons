@@ -2,11 +2,13 @@
 
 angular.module('lessonsApp')
 	.controller('LessonCtrl', function($scope, $http, $state) {
+		$scope.content = '';
+
 		$http.get('/markdown/' + $state.params.id + '.md')
-			.then(function(response) {
-				console.log(response);
-				$scope.content = response.data;
-			}, function(err) {
-				console.log(err);
+			.success(function(response) {
+				$scope.content = response;
+			})
+			.error(function(err) {
+				$scope.content = '# Content not found \n\n <a href="/">Home</a>';
 			});
 	});

@@ -1,4 +1,4 @@
 angular.module('lessonsApp')
-	.factory(function() {
+	.factory('markdown', function() {
 		return markdown;
 	});

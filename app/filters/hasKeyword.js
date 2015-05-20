@@ -3,7 +3,7 @@ angular.module('lessonsApp')
 		return function(input, word) {
 			return _.filter(input, function(item) {
 				return _.some(item.keywords, function(k) {
-					return k === word;
+					return k.indexOf(word) > -1;
 				});
 			});
 		};
