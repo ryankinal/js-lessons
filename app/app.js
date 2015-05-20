@@ -8,7 +8,7 @@ angular.module('lessonsApp', [
 
 	.config(function($stateProvider, $urlRouterProvider, $locationProvider, $httpProvider) {
 		$urlRouterProvider.otherwise('/');
-		$locationProvider.html5Mode(true);
+		//$locationProvider.html5Mode(true);
 
 		$stateProvider
 			.state('home', {
@@ -23,6 +23,15 @@ angular.module('lessonsApp', [
 			});
 	})
 
-	.run(function($rootScope) {
+	.run(function($rootScope, $http) {
 		$rootScope.base = window.base;
+		$http.get(window.base + 'app/data/lessons.json')
+			.then(function(response) {
+				$rootScope.lessons = response.data;
+				$rootScope.keywords = _.unique(_.flatten(_.map($rootScope.lessons, function(lesson) {
+					return lesson.keywords;
+				})));
+			}, function(err) {
+				console.log(err);
+			});
 	});
