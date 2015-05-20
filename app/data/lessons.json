@@ -10,7 +10,7 @@
 	{ "title": "Debugger", "link": "debugger", "keywords": ["client", "browser", "tools"], "active": true  },
 	{ "title": "Inspector", "link": "inspector", "keywords": ["client", "browser", "tools"], "active": true  },
 	{ "title": "Modules and Namespacing", "link": "client-modules", "keywords": ["client", "javascript"], "active": true  },
-	{ "title": "(Document Object Model) DOM", "link": "dom", "keywords": ["client", "javascript", "dom"], "active": true  },
+	{ "title": "Document Object Model (DOM)", "link": "dom", "keywords": ["client", "javascript", "dom"], "active": true  },
 	{ "title": "Events and Listeners", "link": "events-listeners", "keywords": ["client", "javascript", "dom"], "active": true  },
 	{ "title": "Storage", "link": "client-side-storage", "keywords": ["client", "javascript", "storage"], "active": true },
 	{ "title": "XMLHttpRequest", "link": "xhr", "keywords": ["client", "javascript", "http"], "active": true },
