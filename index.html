@@ -2,6 +2,7 @@
 <html lang="en" ng-app="lessonsApp">
 <head>
 	<meta charset="utf-8">
+	<base href="/">
 
 	<title>JS Lessons</title>
 
@@ -19,7 +20,10 @@
 	<script type="text/javascript" src="vendor/angular-ui-router/release/angular-ui-router.min.js"></script>
 
 	<script type="text/javascript" src="app/app.js"></script>
+	<script type="text/javascript" src="app/controllers/home.js"></script>
+	<script type="text/javascript" src="app/controllers/lesson.js"></script>
 </head>
 <body>
+	<div ui-view></div>
 </body>
 </html>
