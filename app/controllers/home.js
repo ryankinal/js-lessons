@@ -3,7 +3,6 @@
 angular.module('lessonsApp')
 	.controller('HomeCtrl', function($scope, $http, _, $location) {
 		$scope.keywords = [];
-		$scope.path = $location.$$path;
 
 		$http.get(window.base + 'app/data/lessons.json')
 			.then(function(response) {

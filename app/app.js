@@ -6,10 +6,9 @@ angular.module('lessonsApp', [
 	'yaru22.md'
 ])
 
-	.config(function($stateProvider, $urlRouterProvider, $locationProvider, $httpProvider, $logProvider) {
+	.config(function($stateProvider, $urlRouterProvider, $locationProvider, $httpProvider) {
 		$urlRouterProvider.otherwise('/');
 		$locationProvider.html5Mode(true);
-		$logProvider.debugEnabled(true);
 
 		$stateProvider
 			.state('home', {
@@ -22,4 +21,8 @@ angular.module('lessonsApp', [
 				templateUrl: 'app/templates/lesson.html',
 				controller: 'LessonCtrl'
 			});
+	})
+
+	.run(function($rootScope) {
+		$rootScope.base = window.base;
 	});

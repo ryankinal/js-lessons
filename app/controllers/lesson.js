@@ -9,6 +9,6 @@ angular.module('lessonsApp')
 				$scope.content = response;
 			})
 			.error(function(err) {
-				$scope.content = '# Content not found \n\n <a href="/">Home</a>';
+				$scope.content = '# Content not found \n\n <a href="' + $scope.base + '">Home</a>';
 			});
 	});
