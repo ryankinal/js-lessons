@@ -2,15 +2,22 @@
 <html lang="en" ng-app="lessonsApp">
 <head>
 	<meta charset="utf-8">
+	<script type="text/javascript" src="vendor/lodash/dist/lodash.min.js"></script>
 	<script type="text/javascript" id="setBase">
 		(function() {
 			var thisScript = document.getElementById('setBase'),
 				head = thisScript.parentNode,
 				baseTag = document.createElement('base'),
-				pathParts = location.pathname.split('/');
+				pathParts = _.filter(location.pathname.split('/'), function(part) {
+					return part !== '';
+				});
 
-			baseTag.href = pathParts[0] + '/';
-
+			if (pathParts.length > 0) {
+				baseTag.href = '/' + pathParts[0] + '/';
+			} else {
+				baseTag.href = '/';
+			}
+			
 			head.insertBefore(baseTag, thisScript);
 		})();
 	</script>
@@ -22,7 +29,6 @@
 	<link rel="stylesheet" type="text/css" href="vendor/font-awesome/css/font-awesome.min.css">
 
 	<script type="text/javascript" src="vendor/jquery/dist/jquery.min.js"></script>
-	<script type="text/javascript" src="vendor/lodash/dist/lodash.min.js"></script>
 	<script type="text/javascript" src="vendor/marked/lib/marked.js"></script>
 	<script type="text/javascript" src="vendor/angular/angular.min.js"></script>
 	<script type="text/javascript" src="vendor/bootstrap/dist/js/bootstrap.min.js"></script>
