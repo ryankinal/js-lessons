@@ -1,5 +1,5 @@
 'use strict';
 
 angular.module('lessonsApp')
-	.controller('HomeCtrl', function($scope, $http, _, $location) {
+	.controller('HomeCtrl', function($scope, $rootScope, $http, _, $location) {
 	});

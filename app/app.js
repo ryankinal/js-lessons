@@ -27,7 +27,10 @@ angular.module('lessonsApp', [
 		$rootScope.base = window.base;
 		$http.get(window.base + 'app/data/lessons.json')
 			.then(function(response) {
-				$rootScope.lessons = response.data;
+				$rootScope.lessons = _.filter(response.data, function(l) {
+					return l.active;
+				});
+				
 				$rootScope.keywords = _.unique(_.flatten(_.map($rootScope.lessons, function(lesson) {
 					return lesson.keywords;
 				})));

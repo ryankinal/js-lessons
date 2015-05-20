@@ -2,7 +2,7 @@
 
 <input type="text" ng-model="keyword">
 
-<div ng-repeat="lesson in lessons|filter:keyword">
-	<h2>{{lesson.title}}</h2>
-	<p><a ui-sref="lesson({id: lesson.link})">Read</a></p>
+<div ng-repeat="l in lessons|filter:keyword">
+	<h2>{{l.title}}</h2>
+	<p><a ui-sref="lesson({id: l.link})">Read</a></p>
 </div>

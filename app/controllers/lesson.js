@@ -4,7 +4,7 @@ angular.module('lessonsApp')
 	.controller('LessonCtrl', function($scope, $http, $state, _) {
 		$scope.content = '';
 		$scope.lesson = _.filter($scope.lessons, function(lesson) {
-			return lesson.link = $state.params.id;
+			return lesson.link === $state.params.id;
 		})[0];
 
 		$http.get($scope.base + 'markdown/' + $state.params.id + '.md')
