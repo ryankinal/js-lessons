@@ -2,9 +2,13 @@ h1, h2, h3, h4 {
 	margin: 0 0 10px 0;
 }
 
+.container {
+	padding: 15px 0;
+}
+
 .lesson-list .lesson {
 	padding: 15px;
-	box-shadow: 5px 0 5px #EEE;
+	box-shadow: 0 5px 8px #AAA;
 	margin: 15px 0;
 	overflow: hidden;
 }
@@ -20,4 +24,18 @@ h1, h2, h3, h4 {
 	background-color: #00F;
 	padding: 5px 8px;
 	margin-right: 10px;
+	cursor: pointer;
+}
+
+.tag-nav {
+	margin-top: 30px;
+}
+
+.nav-list {
+	border: solid 1px #DDD;
+	border-width: 1px 1px 0 1px;
+}
+
+.nav-list li {
+	border-bottom: solid 1px #DDD;
 }

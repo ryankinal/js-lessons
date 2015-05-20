@@ -43,6 +43,8 @@
 	<script type="text/javascript" src="app/app.js"></script>
 	<script type="text/javascript" src="app/controllers/home.js"></script>
 	<script type="text/javascript" src="app/controllers/lesson.js"></script>
+	<script type="text/javascript" src="app/controllers/nav.js"></script>
+	<script type="text/javascript" src="app/controllers/tag.js"></script>
 
 	<script type="text/javascript" src="app/services/lodash.js"></script>
 	
@@ -55,7 +57,12 @@
 		</div>
 	</header>
 	<div class="container">
-		<div ui-view></div>
+		<div class="col-sm-9">
+			<div ui-view></div>
+		</div>
+		<div class="col-sm-3">
+			<div ng-controller="NavCtrl" ng-include="base + 'app/templates/nav.html'"></div>
+		</div>
 	</div>
 </body>
 </html>

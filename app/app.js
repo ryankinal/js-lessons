@@ -20,6 +20,11 @@ angular.module('lessonsApp', [
 				url: '/lessons/{id}',
 				templateUrl: 'app/templates/lesson.html',
 				controller: 'LessonCtrl'
+			})
+			.state('tag', {
+				url: '/tags/{id}',
+				templateUrl: 'app/templates/tag.html',
+				controller: 'TagCtrl'
 			});
 	})
 
@@ -30,7 +35,7 @@ angular.module('lessonsApp', [
 				$rootScope.lessons = _.filter(response.data, function(l) {
 					return l.active;
 				});
-				
+
 				$rootScope.keywords = _.unique(_.flatten(_.map($rootScope.lessons, function(lesson) {
 					return lesson.keywords;
 				})));

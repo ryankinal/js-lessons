@@ -1,0 +1,6 @@
+<div class="tag-nav">
+	<ul class="nav nav-stacked nav-list">
+		<li><a href="#/">home</a></li>
+		<li ng-repeat="k in keywords|orderBy:k"><a href="#/tags/{{k}}">{{k}}</a></li>
+	</ul>
+</div>
