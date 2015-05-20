@@ -4,5 +4,5 @@
 
 <div ng-repeat="lesson in lessons|filter:keyword">
 	<h2>{{lesson.title}}</h2>
-	<p><a href="lessons/{{lesson.link}}">Read</a></p>
+	<p><a href="{{path}}lessons/{{lesson.link}}">Read</a></p>
 </div>
