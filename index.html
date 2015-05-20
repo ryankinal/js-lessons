@@ -17,8 +17,9 @@
 			} else {
 				baseTag.href = '/';
 			}
-			
+
 			head.insertBefore(baseTag, thisScript);
+			window.base = baseTag.href;
 		})();
 	</script>
 
