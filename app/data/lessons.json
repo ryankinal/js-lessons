@@ -1,7 +1,7 @@
 [
 	{ "title": "HTML", "link": "html", "keywords": ["client", "html"], "related": ["css", "javascript", "dom"], "active": true },
-	{ "title": "CSS", "link": "css", "keywords": ["client", "css"], "related": ["html", "javascript", "dom"] },
-	{ "title": "JavaScript", "link": "javascript", "keywords": ["client", "javascript"], "related": ["html", "css", "dom"], "active": true  },
+	{ "title": "CSS", "link": "css", "keywords": ["client", "css", "bootstrap-css"], "related": ["html", "javascript", "dom"], "active": true },
+	{ "title": "JavaScript", "link": "javascript", "keywords": ["client", "javascript"], "related": ["html", "css", "dom"], "active": false  },
 	{ "title": "Data types (and more)", "link": "data-types", "keywords": ["language", "javascript"], "active": true  },
 	{ "title": "Control structures", "link": "control-structures", "keywords": ["language", "javascript"], "active": true  },
 	{ "title": "Functions and scope", "link": "functions-scope", "keywords": ["language", "javascript"], "active": true  },
@@ -32,5 +32,6 @@
 	{ "title": "HTTP and Routing", "link": "http-routing", "keywords": ["server", "javascript", "http"], "active": true },
 	{ "title": "ExpressJS", "link": "express", "keywords": ["server", "javascript", "tools"], "active": true },
 	{ "title": "Sequelize", "link": "sequelize", "keywords": ["server", "javascript", "tools"], "active": true },
-	{ "title": "Angular Fullstack Generator", "link": "angular-fullstack", "keywords": ["tools"], "active": true }
+	{ "title": "Angular Fullstack Generator", "link": "angular-fullstack", "keywords": ["angular", "tools"], "active": true },
+	{ "title": "Bootstrap", "link": "bootstrap-css", "keywords": ["css", "tools"], "related": ["css"], "active": true}
 ]

@@ -39,3 +39,7 @@ h1, h2, h3, h4 {
 .nav-list li {
 	border-bottom: solid 1px #DDD;
 }
+
+.nav-list > li + li {
+	margin-top: 0;
+}
