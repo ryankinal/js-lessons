@@ -1,4 +1,4 @@
 angular.module('lessonsApp')
 	.factory('_', function() {
-		return lodash;
+		return _;
 	});

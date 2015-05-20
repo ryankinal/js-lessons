@@ -1,6 +1,8 @@
 <h1>Home</h1>
 
-<div ng-repeat="lesson in lessons">
+<select ng-options="word for word in keywords" ng-model="keyword"></select>
+
+<div ng-repeat="lesson in lessons|hasKeyword:keyword">
 	<h2>{{lesson.title}}</h2>
 	<p><a href="/lessons/{{lesson.link}}">Read</a></p>
 </div>
