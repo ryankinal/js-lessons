@@ -43,3 +43,27 @@ h1, h2, h3, h4 {
 .nav-list > li + li {
 	margin-top: 0;
 }
+
+.lesson-detail > md > * {
+	margin-left: 15px;
+}
+
+.lesson-detail h1,
+.lesson-detail h2,
+.lesson-detail h3,
+.lesson-detail h4 {
+	margin-top: 15px;
+}
+
+.lesson-detail h1,
+.lesson-detail h2 {
+	margin-top: 15px;
+	margin-left: 0;
+}
+
+.lesson-detail h2 {
+	background-color: #d9edf7;
+	padding: 10px 15px;
+	border: solid #000 1px;
+	border-width: 0 0 1px 15px;
+}
