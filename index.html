@@ -2,7 +2,7 @@
 <html lang="en" ng-app="lessonsApp">
 <head>
 	<meta charset="utf-8">
-	<base href="/">
+	<base href="/js-lessons/">
 
 	<title>JS Lessons</title>
 
@@ -29,6 +29,13 @@
 	<script type="text/javascript" src="app/filters/hasKeyword.js"></script>
 </head>
 <body>
-	<div ui-view></div>
+	<header class="bg-success">
+		<div class="container text-center">
+			<h1>Ryan's JS Lessons</h1>
+		</div>
+	</header>
+	<div class="container">
+		<div ui-view></div>
+	</div>
 </body>
 </html>
