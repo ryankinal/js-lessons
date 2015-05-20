@@ -2,7 +2,18 @@
 <html lang="en" ng-app="lessonsApp">
 <head>
 	<meta charset="utf-8">
-	<base href="/js-lessons/">
+	<script type="text/javascript" id="setBase">
+		(function() {
+			var thisScript = document.getElementById('setBase'),
+				head = thisScript.parentNode,
+				baseTag = document.createElement('base'),
+				pathParts = location.pathname.split('/');
+
+			baseTag.href = pathParts[0] + '/';
+
+			head.insertBefore(baseTag, thisScript);
+		})();
+	</script>
 
 	<title>JS Lessons</title>
 
