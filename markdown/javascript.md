@@ -1,5 +1,3 @@
-# JavaScript
-
 	(function() {
 		var now = new Date(),
 			year = now.getYear() + 1900,

@@ -1,3 +1,3 @@
 <ul class="tag-list">
-	<li class="tag bg-primary" ng-repeat="k in l.keywords" ui-sref="tag({id: k})"><span class="glyphicon glyphicon-tag"></span> {{k}}</li>
+	<li class="tag bg-primary" ng-repeat="k in (l.keywords || lesson.keywords)" ui-sref="tag({id: k})"><span class="glyphicon glyphicon-tag"></span> {{k}}</li>
 </ul>

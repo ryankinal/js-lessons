@@ -1,5 +1,3 @@
-# CSS
-
     * {
     	box-sizing: border-box;
     }

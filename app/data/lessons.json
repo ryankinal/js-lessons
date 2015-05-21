@@ -1,6 +1,6 @@
 [
 	{ "title": "HTML", "link": "html", "keywords": ["client", "html"], "related": ["css", "javascript", "dom"], "active": true },
-	{ "title": "CSS", "link": "css", "keywords": ["client", "css", "bootstrap-css"], "related": ["html", "javascript", "dom"], "active": true },
+	{ "title": "CSS", "link": "css", "keywords": ["client", "css"], "related": ["html", "javascript", "dom", "bootstrap-css"], "active": true },
 	{ "title": "JavaScript", "link": "javascript", "keywords": ["client", "javascript"], "related": ["html", "css", "dom"], "active": false  },
 	{ "title": "Data types (and more)", "link": "data-types", "keywords": ["language", "javascript"], "active": true  },
 	{ "title": "Control structures", "link": "control-structures", "keywords": ["language", "javascript"], "active": true  },

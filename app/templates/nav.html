@@ -1,6 +1,6 @@
 <div class="tag-nav">
 	<ul class="nav nav-stacked nav-list">
-		<li><a href="#/">home</a></li>
-		<li ng-repeat="k in keywords|orderBy:k"><a href="#/tags/{{k}}">{{k}}</a></li>
+		<li><a href="#/"><span class="glyphicon glyphicon-home"></span> home</a></li>
+		<li ng-repeat="k in keywords|orderBy:k"><a href="#/tags/{{k}}"><span class="glyphicon glyphicon-tag"></span> {{k}}</a></li>
 	</ul>
 </div>

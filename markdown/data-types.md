@@ -1,5 +1,3 @@
-# Data Types, Objects, and Arrays
-
 **Note:** The unary operator `typeof` returns the type of the value stored in its operand. `typeof x` will return the type of value stored in the variable `x`
 
 ## Data Types / Values

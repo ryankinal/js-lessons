@@ -12,6 +12,6 @@ angular.module('lessonsApp')
 				$scope.content = response;
 			})
 			.error(function(err) {
-				$scope.content = '# Content not found: ' + $state.params.id;
+				$scope.content = 'Content not found';
 			});
 	});

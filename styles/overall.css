@@ -2,6 +2,18 @@ h1, h2, h3, h4 {
 	margin: 0 0 10px 0;
 }
 
+header h1 a {
+	font-family: Impact;
+	color: #000;
+	font-size: 45px;
+	letter-spacing: 2px;
+}
+
+header h1 a:hover,
+header h1 a:active {
+	text-decoration: none;
+}
+
 .container {
 	padding: 15px 0;
 }
@@ -17,6 +29,7 @@ h1, h2, h3, h4 {
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
+	overflow: hidden;
 }
 
 .tag-list .tag {
@@ -42,6 +55,29 @@ h1, h2, h3, h4 {
 
 .nav-list > li + li {
 	margin-top: 0;
+}
+
+.lesson-header {
+	clear: both;
+	overflow: hidden;
+}
+
+.lesson-header h1 {
+	float: left;
+}
+
+.lesson-header .tag-list {
+	float: left;
+	margin-top: 6px;
+	margin-left: 15px;
+}
+
+.lesson-header .breadcrumbs {
+	clear: both;
+}
+
+.lesson-detail {
+	margin-top: 30px;
 }
 
 .lesson-detail > md > * {

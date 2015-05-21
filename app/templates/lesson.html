@@ -1,6 +1,10 @@
 <div class="content">
-	<div class="breadcrumbs">
-		<a ui-sref="home">JS Lessons</a> &raquo; {{lesson.title}}</div>
+	<div class="lesson-header">
+		<h1>{{lesson.title}}</h1>
+		<div ng-include="base + 'app/templates/tag-list.html'"></div>
+		<div class="breadcrumbs">
+			<a ui-sref="home">JS Lessons</a> &raquo; {{lesson.title}}</div>
+		</div>
 	</div>
 	<div class="lesson-detail">
 		<md ng-model="content"></md>
