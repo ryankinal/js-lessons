@@ -18,6 +18,25 @@ header h1 a:active {
 	padding: 15px 0;
 }
 
+.category {
+	border: solid #999 1px;
+	border-width: 0 1px;
+	margin-left: -1px;
+	padding-top: 15px;
+}
+
+.category:first-child {
+	border-left: none;
+}
+
+.category:last-child {
+	border-right: none;
+}
+
+.search-lessons {
+	margin-top: 30px;
+}
+
 .lesson-list .lesson {
 	padding: 15px;
 	box-shadow: 0 5px 8px #AAA;

@@ -1,10 +1,44 @@
-<div class="form-inline">
-	<span class="h3">Filter:</span> <input class="form-control" type="text" ng-model="keyword">
+<div class="description">
+	<h2>What? Why?</h2>
+	<p>I'm teaching some JavaScript to coworkers. This is a place for me to organize my thoughts and write some stuff about JS. I'll probably cross-post anything I find really helpful on <a href="http://blog.javascriptroom.com">the JS Room blog</a>. I'll definitely be using and/or referencing some JS Room content here.</p>
 </div>
 
-<div class="lesson-list">
-	<div ng-repeat="l in lessons|filter:keyword" class="lesson bg-info">
-		<h2><a ui-sref="lesson({id: l.link})">{{l.title}} <span class="glyphicon glyphicon-play"></span></a></h2>
-		<div ng-include="base + 'app/templates/tag-list.html'" />
+<div class="categories row clearfix">
+	<div class="col-xs-3 category">
+		<h3>JavaScript</h3>
+		<ul>
+			<li ng-repeat="l in categories.language"><a href="#/lessons/{{l.link}}">{{l.title}}</a></li>
+		</ul>
+	</div>
+	<div class="col-xs-3 category">
+		<h3>Client</h3>
+		<ul>
+			<li ng-repeat="l in categories.client"><a href="#/lessons/{{l.link}}">{{l.title}}</a></li>
+		</ul>
+	</div>
+	<div class="col-xs-3 category">
+		<h3>Server</h3>
+		<ul>
+			<li ng-repeat="l in categories.server"><a href="#/lessons/{{l.link}}">{{l.title}}</a></li>
+		</ul>
+	</div>
+	<div class="col-xs-3 category">
+		<h3>Tools</h3>
+		<ul>
+			<li ng-repeat="l in categories.tools"><a href="#/lessons/{{l.link}}">{{l.title}}</a></li>
+		</ul>
+	</div>
+</div>
+
+<div class="row search-lessons">
+	<div class="text-center">
+		<label><span class="h4">Search</span> <input class="form-control" type="text" ng-model="keyword"></label>
+	</div>
+
+	<div class="lesson-list">
+		<div ng-repeat="l in lessons|filter:keyword" class="lesson bg-info">
+			<h2><a ui-sref="lesson({id: l.link})">{{l.title}} <span class="glyphicon glyphicon-play"></span></a></h2>
+			<div ng-include="base + 'app/templates/tag-list.html'" />
+		</div>
 	</div>
 </div>
